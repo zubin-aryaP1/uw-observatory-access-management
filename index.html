@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1420" />
+  <meta name="description" content="Fictional user access governance demo for a multi-station satellite observatory." />
+  <title>Observatory Access | Daintree Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <div class="brand">
+        <div class="brand-mark"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="13" cy="13" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M3 17c6-8 12-9 20-8M5 7c5 8 10 10 17 10" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <div><strong>ORBITAL<span class="brand-light">/ACCESS</span></strong><small>Daintree × UW • Concept</small></div>
+      </div>
+      <div class="sidebar-section-label">WORKSPACE</div>
+      <nav id="main-nav" class="nav"></nav>
+      <div class="sidebar-footer">
+        <div class="demo-info"><span class="status-dot"></span><span>Interactive prototype</span></div>
+        <div class="aside-notice"><strong>Fictional data only</strong><p>This prototype does not verify identity, citizenship, residency, or export eligibility.</p></div>
+        <div class="build-note">Access Governance Demo • v1.4</div>
+      </div>
+    </aside>
+    <div class="main-shell">
+      <div class="warning-strip"><span class="warn-icon">!</span><strong>DEMO ONLY</strong><span>Not an authorized system, real authentication, export-control approval, or certified environment. Do not enter personal or controlled information.</span></div>
+      <header class="topbar">
+        <div class="breadcrumb"><span>Observatory Platform</span><span class="chevron">›</span><strong id="breadcrumb-page">Overview</strong></div>
+        <div class="topbar-actions">
+          <label class="demo-mode-control" id="demo-toggle"><input type="checkbox" id="demo-mode" checked /><span>Demo tools</span><span class="mode-hint">On / Off</span></label>
+          <label class="persona-switcher"><span>View as</span><select id="persona" aria-label="Choose demo persona"><option value="super">Super Admin</option><option value="stationAdmin">Station Admin</option><option value="operator">Operator</option><option value="viewer">Viewer</option><option value="applicant">Prospective User</option></select></label>
+          <div class="avatar" id="persona-avatar">MC</div>
+        </div>
+      </header>
+      <main id="main-content" tabindex="-1"></main>
+      <footer class="bottomnote"><span>Data and events are simulated and reset when the page reloads.</span><span>Demo tools are for testing only • Not compliance-certified</span></footer>
+    </div>
+  </div>
+  <div id="modal-root"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
